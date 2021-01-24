@@ -2,12 +2,15 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import Menu from './component/Menu'
-import From from './pages/Form'
+import Dashboard from './pages/Dashboard'
+import PippiSay from './pages/PippiSay'
+import PippiLive from './pages/PippiLive'
+import PippiCollab from './pages/PippiCollab'
+import Form from './pages/Form'
 
 function App() {
   return (
@@ -22,9 +25,10 @@ function App() {
             <div class="outter-wp">
             	
             <Switch>
-              <Route path="/">
-                <From />
-              </Route>
+              <Route path="/pippiSay"><PippiSay /></Route>
+              <Route path="/pippiLive"><PippiLive /></Route>
+              <Route path="/pippiCollab"><PippiCollab /></Route>
+              <Route path="/"><Dashboard /></Route>
             </Switch>
 
             </div>

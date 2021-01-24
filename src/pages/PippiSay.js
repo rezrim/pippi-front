@@ -28,7 +28,7 @@ function Form(props) {
             <div class="sub-heard-part">
                 <ol class="breadcrumb m-b-0">
                 <li><a href="index.html">Home</a></li>
-                <li class="active">Forms</li>
+                <li class="active">Pippi Say</li>
                 </ol>
             </div>
             <div class="forms-main">
@@ -37,8 +37,8 @@ function Form(props) {
                     <div class="graph-form">
                         <div class="form-body">
                             <div class="form-group"> 
-                                <label for="exSay">Mau pippi ngomong apa ?</label> 
-                                <input type="say" class="form-control" id="exSay" value={say} placeholder="Masukkin kata apa yang mau dikirim" onChange={(e) => setSay(e.target.value)}/> 
+                                <label for="exSay">Mau Pippi Ngomong Apa ?</label> 
+                                <input type="say" class="form-control" id="exSay" value={say} placeholder="Masukkin Kata Apa yang Mau Dikirim" onChange={(e) => setSay(e.target.value)}/> 
                             </div> 
                             <button type="submit" class="btn btn-default" style={{margin:0}}>Kirim</button> 
                         </div>
